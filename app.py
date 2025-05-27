@@ -35,7 +35,7 @@ db = Qdrant(
 print("############## DB ###############")
 print(db)
 
-query = "What is the bill address?"
+query = "Give me Smart approval routing based on supplier risk evaluation?"
 docs = db.similarity_search_with_score(query, k = 1)
 for i in docs:
     doc, score = i

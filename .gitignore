@@ -1,0 +1,16 @@
+# Ignore Qdrant collections and vector DB data
+collections/
+gpt_db/
+*.log
+*.dat
+*.json
+*.mappings
+*.versions
+*.MANIFEST-*
+*.OPTIONS-*
+CURRENT
+LOG
+
+
+# Files
+*.pdf
