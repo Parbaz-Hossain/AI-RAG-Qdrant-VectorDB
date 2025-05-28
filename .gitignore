@@ -1,5 +1,6 @@
 # Ignore Qdrant collections and vector DB data
 collections/gpt_db/
+collections
 
 # Files
 *.pdf

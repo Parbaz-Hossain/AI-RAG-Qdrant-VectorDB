@@ -3,3 +3,7 @@ sentence-transformers
 torch
 pypdf
 qdrant-client
+uvicorn[standard]
+fastapi
+pandas
+openpyxl 

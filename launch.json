@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: FastAPI (uvicorn)",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "main:app",       // Replace with your actual file and app object
+        "--reload",
+        "--port", "8000"
+      ],
+      "jinja": true,
+      "justMyCode": false
+    }
+  ]
+}
