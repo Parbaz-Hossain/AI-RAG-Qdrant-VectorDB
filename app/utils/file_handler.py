@@ -3,7 +3,6 @@ import pandas as pd
 from pypdf import PdfReader
 import os
 
-
 async def load_file(file):
     contents = await file.read()
     filename = file.filename

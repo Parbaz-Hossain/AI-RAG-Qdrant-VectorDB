@@ -20,7 +20,6 @@ embeddings = HuggingFaceBgeEmbeddings(
     model_kwargs = model_kwargs,
     encode_kwargs = encode_kwargs
 )
-
 print("Embedding model loaded............")
 
 # Create the Qdrant vector store
@@ -34,5 +33,4 @@ qdrant = Qdrant.from_documents(
     prefer_grpc = False,
     collection_name=collection_name
 )
-
 print("Qdrant Index Created...............")
