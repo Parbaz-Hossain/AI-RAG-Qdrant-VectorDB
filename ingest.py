@@ -4,7 +4,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter  
 
 
-loader = PyPDFLoader("data.pdf")
+loader = PyPDFLoader("data3.pdf")
 documents = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=20)
 
@@ -20,7 +20,6 @@ embeddings = HuggingFaceBgeEmbeddings(
     model_kwargs = model_kwargs,
     encode_kwargs = encode_kwargs
 )
-
 print("Embedding model loaded............")
 
 # Create the Qdrant vector store
@@ -34,5 +33,4 @@ qdrant = Qdrant.from_documents(
     prefer_grpc = False,
     collection_name=collection_name
 )
-
 print("Qdrant Index Created...............")
